@@ -12,7 +12,7 @@ try:
     browser.get(link)
     #find the x value in the string
     x_value = browser.find_element_by_id("input_value").text
-    #find the text fieal & add calculated value for x
+    #find the text field & add calculated value for x
     input1 = browser.find_element_by_id("answer")
     input1.send_keys(calc(x_value))
     #check the radio and checkbox
